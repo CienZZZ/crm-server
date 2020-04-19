@@ -1,7 +1,7 @@
 import { Entity, PrimaryGeneratedColumn, PrimaryColumn, Column, CreateDateColumn, UpdateDateColumn } from 'typeorm';
 import { Company } from '../models/company';
 
-@Entity()
+@Entity({name: 'company'})
 export class CompanyEntity implements Company {
 
     @PrimaryGeneratedColumn()
