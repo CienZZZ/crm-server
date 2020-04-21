@@ -4,32 +4,31 @@ import { Company } from '../models/company';
 @Entity({name: 'company'})
 export class CompanyEntity implements Company {
 
-    @PrimaryGeneratedColumn()
+    @PrimaryGeneratedColumn({
+        type: 'bigint'
+    })
     id: number;
 
-    @PrimaryColumn()
     @Column({
         nullable: false,
-        length: 500,
-        unique: true
+        unique: true,
+        type: 'text'
     })
     name: string;
 
-    @PrimaryColumn()
     @Column({
-        length: 500
+        type: 'text'
     })
     full_name: string;
 
-    @PrimaryColumn()
     @Column({
-        length: 250
+        type: 'text'
     })
     created_by: string;
 
-    @CreateDateColumn()
-    createdAt;
+    // @CreateDateColumn()
+    // createdAt;
 
-    @UpdateDateColumn()
-    updatedAt;
+    // @UpdateDateColumn()
+    // updatedAt;
 }
