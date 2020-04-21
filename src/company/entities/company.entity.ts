@@ -5,24 +5,24 @@ import { Company } from '../models/company';
 export class CompanyEntity implements Company {
 
     @PrimaryGeneratedColumn({
-        type: 'bigint'
+        // type: 'bigint',
     })
     id: number;
 
     @Column({
         nullable: false,
         unique: true,
-        type: 'text'
+        // type: 'text'
     })
     name: string;
 
     @Column({
-        type: 'text'
+        // type: 'text'
     })
     full_name: string;
 
     @Column({
-        type: 'text'
+        // type: 'text'
     })
     created_by: string;
 
