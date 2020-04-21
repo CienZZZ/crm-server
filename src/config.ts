@@ -24,7 +24,7 @@ export const config: AppConfiguration = {
     username: process.env.POSTGRES_USER || 'postgres',
     password: process.env.POSTGRES_PASSWORD || 'root',
     database: process.env.POSTGRES_DB       || 'crm_db',
-    // database: process.env.POSTGRES_DB       || 'salespartner',   // to polaczenie nie dziala
+    // database: process.env.POSTGRES_DB       || 'salespartner',   // to polaczenie działa, ale kasuje kolumny z SP i tworzy na wzor tych, nie pozwala robic update i inne problemy
     entities: [`${__dirname}/**/entities/*.{js,ts}`],
     synchronize: true,
     replication: process.env.DB_MASTER_URL && process.env.DB_REPLICAS_URL ? {
