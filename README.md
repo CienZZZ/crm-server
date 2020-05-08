@@ -2,7 +2,7 @@
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
 </p>
 
-# NestJS Contacts API
+# NestJS CRM API
 
 This project uses [@nestjsx/crud](https://github.com/nestjsx/crud) to simplify and standardize the REST API
 
@@ -11,9 +11,6 @@ This backend is based on NestJS Framework V6 (https://nestjs.com/)
 - DB: Postgres
 - Websockets: Socket.io
 - Synchronises sockets thourgh Redis adapter for horizontal scaling 
-
-
-**Frontend is available here: **
 
 
 ## Env VARS:
@@ -29,27 +26,16 @@ This backend is based on NestJS Framework V6 (https://nestjs.com/)
 
 ## Run
 
-`docker-compose up --build `
-
 Server will be running on http://localhost:3000
 
 # Endpoints
 
- - `GET /contact` : returns an array of `Contacts`
- - `GET /contact/:id`: returns a `Contact` shape 
- - `POST /contact`: Create a contact, returns a `Contact` shape
- - `PATCH /contact/:id`: Partially update a `Contact`, returns a `Contact` shape
- - `DELETE /contact/:id`: Delete a `Contact`, empty response
+ - `GET /company` : returns an array of `Companies`
+ - `GET /company/:id`: returns a `Company` shape 
+ - `POST /company`: Create a company, returns a `Company` shape
+ - `PATCH /company/:id`: Partially update a `Company`, returns a `Comapny` shape
+ - `DELETE /company/:id`: Delete a `Company`, empty response
 
-### Contact shape:
-```typescript
-interface Contact {
-    id?: number | string;
-    name: string;
-    email: string;
-    phone?: string;
-}
-```
 ## Installation
 
 ```bash
