@@ -2,7 +2,7 @@
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
 </p>
 
-# NestJS CRM API
+# NestJS CRM API done when and to learning purpose :)
 
 This project uses [@nestjsx/crud](https://github.com/nestjsx/crud) to simplify and standardize the REST API
 
